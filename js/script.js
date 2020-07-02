@@ -35,8 +35,7 @@ const showPage = (list, page) => {
 
 const appendPageLinks = (list) => {
    const paginationDiv = document.createElement('div');
-   const ul = document.createElement('ul');
-   const ulAppended = paginationDiv.appendChild(ul);
+   const ul = paginationDiv.appendChild(document.createElement('ul'));
    const numberOfPages = Math.ceil(list.length / numberOfItems);
    const pageDiv = document.querySelector('.page');
    paginationDiv.classList.add('pagination');
@@ -44,7 +43,7 @@ const appendPageLinks = (list) => {
       const li = document.createElement('li');
       const a = document.createElement('a');
       a.setAttribute('href', '#');
-      ulAppended.appendChild(li).appendChild(a);
+      ul.appendChild(li).appendChild(a);
       a.innerHTML = i;
       if (i === 1) {
          a.classList.add('active');
@@ -123,9 +122,9 @@ const searchFunction = (searchInput) => {
    appendPageLinks(listOfMatchingStudents);
 }
 
-/**
+/***********************************
  * Call functions for the first time
- */
+ ************************************/
 
 showPage(studentListItems, 1);
 appendPageLinks(studentListItems);
