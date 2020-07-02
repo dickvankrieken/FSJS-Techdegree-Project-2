@@ -1,4 +1,4 @@
 # Full-Stack JavaScript Techdegree Project 2 
 
 For this project I have written JavaScript code for a students list so that pagination links are added to the list. Instead of having one long list with all the students, the code I wrote manipulates the list so that it is divided in pages with a set ammount of list items per page (10 per default). The code is usable for lists of different sizes.
-In order to achieve an exceeds expectations rating, I have written the code to add a search functionality to the webpage. This webpage enables the user to input a search query and filters the list so that it shows only the list items that match the search query. The pagination links are adjusted to the new list of matching results. 
+In order to achieve an exceeds expectations rating, I have written the code to add a search functionality to the webpage. The search input field enables the user to input a search query and filters the list so that it shows only the list items that match the search query. The pagination links are adjusted to the new list of matching results. 
